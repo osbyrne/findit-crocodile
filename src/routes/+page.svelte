@@ -2,6 +2,7 @@
 	import { enhance, type SubmitFunction } from '$app/forms';
 	import { supabaseClient } from '$lib/supabase';
 	import type { PageData } from './$types';
+	import HeaderLanding from '../components/HeaderLanding.svelte';
 
 	export let data: PageData;
 
@@ -15,7 +16,7 @@
 </script>
 
 <main>
-	<h1>Find It</h1>
+	<HeaderLanding session={data.session}/>
 	{#if data.session}
 		<p>Welcome, {data.session.user.email}</p>
 		<form action="/logout" method="POST" use:enhance={submitLogout}>
