@@ -27,10 +27,10 @@
                 <Button>Dashboard</Button>
             </NavLi>
         {:else}
-            <NavLi href="/signin">
+            <NavLi href="/login">
                 <Button outline>Sign In</Button>
             </NavLi>
-            <NavLi href="/signup">
+            <NavLi href="/register">
                 <Button>Get Started</Button>
             </NavLi>
         {/if}

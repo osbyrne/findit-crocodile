@@ -23,10 +23,6 @@
 			<button type="submit">Logout</button>
 		</form>
 	{:else}
-		<p>Let's learn how to register and login users!</p>
-		<div>
-			<a href="/login">Login</a>
-			<a href="/register">Register</a>
-		</div>
+		<p>You are currently not logged in.</p>
 	{/if}
 </main>
