@@ -1,10 +1,18 @@
+<script>
+    import { Button, Label, Input } from 'flowbite-svelte';
+</script>
+
 <main>
-	<h1>Login</h1>
-	<form action="?/login" method="POST">
-		<label for=""> Email </label>
-		<input type="text" name="email" />
-		<label for=""> Password </label>
-		<input type="password" name="password" />
-		<button type="submit">Login</button>
-	</form>
+    <body>
+        <h1>Login</h1>
+        <form action="?/login" method="POST">
+            <Label for="email"> Email </Label>
+            <Input type="text" name="email" required placeholder="name@flowbite.com" />
+
+            <Label for="password"> Password </Label>
+            <Input type="password" name="password" required placeholder="R$N2KQ8eU83%X*UqZBn*" />
+            
+            <Button type="submit">Login</Button>
+        </form>
+    </body>
 </main>
