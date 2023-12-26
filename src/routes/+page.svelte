@@ -4,6 +4,7 @@
 	import type { PageData } from './$types';
 	import HeaderLanding from '../components/HeaderLanding.svelte';
 
+
 	export let data: PageData;
 
 	const submitLogout: SubmitFunction = async ({ cancel }) => {
