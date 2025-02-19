@@ -1,0 +1,21 @@
+
+# Ignore everything
+*
+
+# Track directories
+!*/
+
+# Track these files
+!.gitignore
+!*.nix
+!*.md
+!*.txt
+!*.json
+!*.js
+!*.ts
+!*.svelte
+!*.yml
+!*.css
+!*.png
+!*.jpg
+!*.jpeg
