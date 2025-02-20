@@ -1,8 +1,33 @@
-.DS_Store
-node_modules
-/build
-/.svelte-kit
-/package
-.env
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
+
+# Ignore everything
+*
+
+# Track directories
+!*/
+
+# Track these files
+!.gitignore
+!*.nix
+!*.md
+!*.txt
+!*.json
+!*.js
+!*.ts
+!*.svelte
+!*.yml
+!*.css
+!*.png
+!*.jpg
+!*.jpeg
+
+# Ignore node_modules
+node_modules/
+
+# Ignore pnpm store
+.pnpm-store/
+
+# Ignore other generated files and directories
+.devbox/
+.svelte-kit/
+.trunk/
+.vscode/
